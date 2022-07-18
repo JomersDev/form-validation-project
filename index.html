@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Sign Up
+        </div>
+        <form novalidate class="form">
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="John.smith@gmail.com">
+                <span class="error"></span>
+            </div>
+            <div class="form-field">
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country" required placeholder="Australia">
+                <span class="error"></span>
+            </div>
+            <div class="form-field">
+                <label for="post-code">Post Code</label>
+                <input type="text" name="post-code" id="post-code" required placeholder="2000">
+                <span class="error"></span>
+            </div>
+            <div class="form-field">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required placeholder="Password">
+                <span class="error"></span>
+            </div>
+            <div class="form-field">
+                <label for="password-confirm">Confirm Password</label>
+                <input type="password" name="password" id="password" required placeholder="Password">
+                <span class="error"></span>
+            </div>
+            <button type="submit" class="submit" id="submit">Create My Account</button>
+        </form>
+    </div>
+</body>
+</html>
