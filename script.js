@@ -3,7 +3,14 @@ const form = document.getElementById("form");
 
 //Form event listener
 form.addEventListener('submit', function (event) {
-    if(!email.validity.valid) {
+    if (!email.validity.valid && !country.validity.valid && !postCode.validity.valid && !password.validity.valid && !passwordConfirm.validity.valid) {
+        showEmailError();
+        showCountryError();
+        showPostCodeError();
+        showPasswordError();
+        showPasswordConfirmError();
+        event.preventDefault();
+    } else if (!email.validity.valid) {
         showEmailError();
         event.preventDefault();
     } else if (!country.validity.valid) {

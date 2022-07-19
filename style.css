@@ -79,7 +79,16 @@ input:invalid {
     background-color: #fdd;
 }
 
+input:valid {
+    border-color: rgb(0, 168, 50);
+    background-color: rgb(169, 240, 178);
+}
+
 input:focus:invalid {
+    outline: none;
+}
+
+input:focus:valid {
     outline: none;
 }
 
