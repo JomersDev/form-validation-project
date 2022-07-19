@@ -13,10 +13,10 @@
         <div class="header">
             Sign Up
         </div>
-        <form novalidate class="form">
+        <form novalidate class="form" id="form">
             <div class="form-field">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required placeholder="John.smith@gmail.com">
+                <input type="email" name="email" id="email" required minlength="8" placeholder="John.smith@gmail.com">
                 <span class="error"></span>
             </div>
             <div class="form-field">
@@ -25,18 +25,18 @@
                 <span class="error"></span>
             </div>
             <div class="form-field">
-                <label for="post-code">Post Code</label>
-                <input type="text" name="post-code" id="post-code" required placeholder="2000">
+                <label for="postCode">Post Code</label>
+                <input type="text" name="postCode" id="postCode" required pattern="\d{4}" placeholder="2000">
                 <span class="error"></span>
             </div>
             <div class="form-field">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" required placeholder="Password">
+                <input type="password" name="password" id="password" required minlength="6" placeholder="Password">
                 <span class="error"></span>
             </div>
             <div class="form-field">
-                <label for="password-confirm">Confirm Password</label>
-                <input type="password" name="password" id="password" required placeholder="Password">
+                <label for="passwordConfirm">Confirm Password</label>
+                <input type="password" name="passwordConfirm" id="passwordConfirm" required minlength="6" placeholder="Password">
                 <span class="error"></span>
             </div>
             <button type="submit" class="submit" id="submit">Create My Account</button>

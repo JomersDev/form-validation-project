@@ -59,7 +59,7 @@ body {
 }
 
 .submit {
-    background-color: #ff7700;;
+    background-color: #ff7700;
     border: none;
     color: white;
     width: 100%;
@@ -67,4 +67,31 @@ body {
     padding: 10px;
     font-weight: bold;
     font-size: 18px;
+}
+
+.submit:hover {
+    background-color: #e27311;
+    cursor: pointer;
+}
+
+input:invalid {
+    border-color: red;
+    background-color: #fdd;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+.error {
+    width: 100%;
+    position: absolute;
+    font-size: 80%;
+    padding: 0;
+    color: red;
+    border-radius: 0 0 5px 5px;
+}
+
+.error .active {
+    padding: 0.3em;
 }
